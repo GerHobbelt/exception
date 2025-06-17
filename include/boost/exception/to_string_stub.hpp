@@ -66,7 +66,7 @@ boost
             std::string
             convert( T const & x, char const * s )
                 {
-                BOOST_ASSERT(s!=0);
+                BOOST_ASSERT(s != nullptr);
                 return s;
                 }
             };
