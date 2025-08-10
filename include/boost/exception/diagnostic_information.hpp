@@ -106,7 +106,7 @@ boost
                 if( !c )
                     x.data_.adopt(c=new exception_detail::error_info_container_impl);
                 char const * di=c->diagnostic_information(header);
-                BOOST_ASSERT(di!=0);
+                BOOST_ASSERT(di != nullptr);
                 return di;
 #ifndef BOOST_NO_EXCEPTIONS
                 }

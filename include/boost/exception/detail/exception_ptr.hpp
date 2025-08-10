@@ -364,7 +364,7 @@ boost
                 case exception_detail::clone_current_exception_result::
                 success:
                     {
-                    BOOST_ASSERT(e!=0);
+                    BOOST_ASSERT(e != nullptr);
                     return exception_ptr(shared_ptr<exception_detail::clone_base const>(e));
                     }
                 case exception_detail::clone_current_exception_result::
